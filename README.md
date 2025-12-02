@@ -1,17 +1,17 @@
 # cairopath
 A [Cairo](https://github.com/Kozea/cairocffi) wrapper I created in 2018 to programmatically draw vector graphics, inspired by [Gizeh](https://github.com/Zulko/gizeh). As its name indicates, its main use is to simplify [Cairo's markup for paths](https://cairocffi.readthedocs.io/en/stable/api.html#cairocffi.Context.new_path), by using [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)-style single-letter commands and allowing method chaining. It also supports transformations, clips and gradients.
 
-While working on a Cairopath function to parse SVG path strings, I came across an existing vector graphics library named [CairoSVG](https://github.com/Kozea/CairoSVG). My script has since invoked CairoSVG's path module for string input, albeit in a rather hacky way; because CairoSVG's purpose is SVG file conversion, it isn't designed to support direct input of vector data or individual use of its component scripts. [My unfinished fork of the project](https://github.com/SilverCardioid/CairoSVG/) is intended to allow easier use of CairoSVG from a script, and to use its existing code to extend Cairopath's functionality to include other SVG features like text, cloning and groups. In the meantime, though, Cairopath continues to be used in some of my other projects.
+While working on a Cairopath function to parse SVG path strings, I came across an existing vector graphics library named [CairoSVG](https://github.com/Kozea/CairoSVG). My script has since invoked CairoSVG's path module for string input, albeit in a rather hacky way; because CairoSVG's purpose is SVG file conversion, it isn't designed to support direct input of vector data or individual use of its component scripts. [My unfinished fork of the project](https://github.com/Cardioid3/CairoSVG/) is intended to allow easier use of CairoSVG from a script, and to use its existing code to extend Cairopath's functionality to include other SVG features like text, cloning and groups. In the meantime, though, Cairopath continues to be used in some of my other projects.
 
 ## Installation
 Requirements:
-* [cairocffi](https://github.com/Kozea/cairocffi) (needs a Cairo DLL; see [here](https://github.com/SilverCardioid/CairoSVG#requirements) for more information)
+* [cairocffi](https://github.com/Kozea/cairocffi) (needs a Cairo DLL; see [here](https://github.com/Cardioid3/CairoSVG#requirements) for more information)
 * [CairoSVG](https://github.com/Kozea/CairoSVG)
 * numpy
 
 Installation using Pip (includes all requirements except the Cairo DLL):
 ```
-pip install git+https://github.com/SilverCardioid/cairopath.git
+pip install git+https://github.com/Cardioid3/cairopath.git
 ```
 
 ## Usage
